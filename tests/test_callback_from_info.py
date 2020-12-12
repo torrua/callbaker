@@ -1,6 +1,6 @@
 import pytest
 
-from callbaker import callback_from_info
+from callbaker.functions import callback_from_info
 
 
 class TestCallbackFromInfo:
