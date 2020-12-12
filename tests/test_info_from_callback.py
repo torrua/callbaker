@@ -40,12 +40,12 @@ class TestInfoFromCallback:
     @pytest.mark.parametrize("value", bool_tuple)
     def test_call_data_bool(self, value):
         result = info_from_callback(
-            call_data=f"&key_1={value}")
+            call_data="&key_1=%s" % value)
         assert isinstance(result, dict)
         assert result['key_1'] == value
 
     def test_call_data_digit(self):
         result = info_from_callback(
-            call_data=f"&key_1=20")
+            call_data="&key_1=20")
         assert isinstance(result, dict)
         assert result['key_1'] == 20

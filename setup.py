@@ -13,7 +13,7 @@ def read(filename):
 setup(
   name='callbaker',
   packages=['callbaker'],
-  version='1.1.0',
+  version='1.2.0',
   license='MIT',
   description="Telegram Button Callback Data Converter",
   long_description=read("README.md"),
@@ -21,7 +21,7 @@ setup(
   author='torrua',
   author_email='torrua@gmail.com',
   url='https://github.com/torrua/callbaker',
-  download_url='https://github.com/torrua/callbaker/archive/v1.1.0.tar.gz',
+  download_url='https://github.com/torrua/callbaker/archive/v1.2.0.tar.gz',
   keywords=['Convert', 'Callback', 'Keyboard', 'Telegram', "Inline"],
   classifiers=[
     'Development Status :: 4 - Beta',  # "3 - Alpha", "4 - Beta" or "5 - Production/Stable"
