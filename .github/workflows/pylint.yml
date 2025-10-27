@@ -21,4 +21,4 @@ jobs:
         pip install pylint
     - name: Check with Pylint
       run: |
-        pylint --fail-under=8 callbacker
+        pylint --fail-under=8 callbaker
