@@ -1,3 +1,8 @@
+"""
+This module contains all the necessary functions for
+creating callback data strings and parsing it from call's data.
+"""
+
 from callbaker import EMS, IMS, DMV
 
 
