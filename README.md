@@ -5,6 +5,8 @@
 
 Telegram callback queries converter
 
+Read [this Guide in Russian](README_RU.md) also.
+
 ## What it is
 
 This tiny package can help you parse the callback data request response for telegram bots.
