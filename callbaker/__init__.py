@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 This module contains all the necessary functions for
 creating callback data strings and parsing it from call's data.
