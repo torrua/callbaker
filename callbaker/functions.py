@@ -15,11 +15,11 @@ def info_from_callback(call_data: str, separators: tuple = (EMS, IMS, DMV)) -> d
     """
 
     if not isinstance(call_data, str):
-        raise TypeError("call_data should be a str type. You input %s." % type(call_data))
+        raise TypeError(f"call_data should be a str type. You input {type(call_data)}.")
 
     for sep in separators:
         if not isinstance(sep, str):
-            raise TypeError("Separator should be a str type. You input %s." % type(sep))
+            raise TypeError(f"Separator should be a str type. You input {type(sep)}.")
 
     _ems, _ims, _ = separators
     separated_items = call_data.split(_ems)
@@ -42,17 +42,17 @@ def callback_from_info(info: dict, separators: tuple = (EMS, IMS, DMV)) -> str:
     :return:
     """
     if not isinstance(info, dict):
-        raise TypeError("Info should be a dict type. You input %s." % type(info))
+        raise TypeError(f"Info should be a dict type. You input {type(info)}.")
 
     for sep in separators:
         if not isinstance(sep, str):
-            raise TypeError("Separator should be a str type. You input %s." % type(sep))
+            raise TypeError(f"Separator should be a str type. You input {type(sep)}.")
 
     _ems, _ims, _ = separators
 
-    callback = "".join(["%s%s%s%s" % (_ems, mark, _ims, value) for mark, value in info.items()])
+    callback = "".join([f"{_ems}{mark}{_ims}{value}" for mark, value in info.items()])
 
     if len(callback) > 64:
         raise ValueError("The length of callback_data should not be more that 64 symbols."
-                         "Your callback's length is %s symbols." % len(callback))
+                         f"Your callback's length is {len(callback)} symbols.")
     return callback
