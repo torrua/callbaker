@@ -1,0 +1,11 @@
+"""
+This module contains constants for the callbaker package.
+"""
+
+EXTERNAL_MARK_SEPARATOR = "&"
+INTERNAL_MARK_SEPARATOR = "="
+DEFAULT_MARK_VALUE = "*"
+
+EMS = EXTERNAL_MARK_SEPARATOR
+IMS = INTERNAL_MARK_SEPARATOR
+DMV = DEFAULT_MARK_VALUE
