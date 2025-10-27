@@ -2,6 +2,7 @@
 
 [![Download Callbaker](https://img.shields.io/pypi/v/callbaker.svg)](https://pypi.python.org/pypi/callbaker)
 [![codecov](https://codecov.io/gh/torrua/callbaker/branch/master/graph/badge.svg?token=CHCS5JEGZI)](https://codecov.io/gh/torrua/callbaker)
+[![Pytest](https://github.com/torrua/callbaker/actions/workflows/pytest.yml/badge.svg)](https://github.com/torrua/callbaker/actions/workflows/pytest.yml)
 
 Telegram callback queries converter
 
